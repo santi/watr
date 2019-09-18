@@ -6,13 +6,23 @@ class App extends React.Component {
   constructor() {
     super()
     this.notify.bind(this)
+    this.enableNotifications.bind(this)
+  }
+
+  enableNotifications(e) {
+    e.preventDefault()
+    const enable = window.confirm("Are you sure you want to enable notifications?")
+    if (enable) {
+      this.notify()
+    }
+
   }
 
   notify() {
     new Notification("Remember to drink water!", {
       requireInteraction: true,
-
     })
+    setTimeout(this.notify, 30000)
   }
 
   render() {
