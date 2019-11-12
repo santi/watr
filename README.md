@@ -1,5 +1,7 @@
 # watr
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b00d937-1172-44d9-9720-7074eed4bbe1/deploy-status)](https://app.netlify.com/sites/watr/deploys)
+
 ## Running locally
 
 Clone the repo to your machine. Then install all necessary dependencies by running
