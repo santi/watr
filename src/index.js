@@ -5,7 +5,9 @@ import "./index.css";
 import Main from "./routes/Main";
 import Settings from "./routes/Settings";
 import NotFound from "./routes/notfound";
-import * as serviceWorker from "./serviceWorker";
+import { install } from './serviceWorker'
+
+install()
 
 const routing = (
   <Router>
@@ -20,9 +22,3 @@ const routing = (
 );
 
 ReactDOM.render(routing, document.getElementById("root"));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-Notification.requestPermission();
-serviceWorker.register();

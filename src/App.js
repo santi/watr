@@ -1,8 +1,7 @@
 import React from "react";
-//import logo from "../logo.svg";
-import "./Main.css";
+import "./App.css";
 
-class Main extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.enableNotifications = this.enableNotifications.bind(this);
@@ -32,11 +31,11 @@ class Main extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src="/logo512.png" className="App-logo" alt="logo" />
-          <button onClick={() => this.notify("Remember to drink more water!")} className="Notify-button">Notify</button>
+          <button onClick={() => this.notify("Remember to drink more water!")}>Notify</button>
         </header>
       </div>
     );
   }
 }
 
-export default Main;
+export default App;
