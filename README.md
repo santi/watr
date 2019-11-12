@@ -30,6 +30,7 @@ The app should now be available at `http://localhost:3000`
   - [ ] Units (liters / gallons etc)
   - [ ] Unit conversion
   - [ ] Theme
+- [ ] Persistant storage of settings  
 - [ ] Water fun facts
 - [ ] Achievements
 - [ ] Check in when drinking water
