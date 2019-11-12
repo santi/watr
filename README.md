@@ -20,8 +20,8 @@ The app should now be available at `http://localhost:3000`
 
 ## Feature list
 
-- [ ] Ask for notification permission on mobile
-- [ ] Add icon
+- [x] Ask for notification permission on mobile
+- [x] Add icon
 - [ ] Make settings view
   - [ ] Sane defaults
   - [ ] Notification intervals
