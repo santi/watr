@@ -9,10 +9,6 @@ class Main extends React.Component {
     this.notify = this.notify.bind(this);
   }
 
-  componentDidMount() {
-    this.enableNotifications()
-  }
-
   async enableNotifications() {
     const existingPermission = Notification.permission
     if (existingPermission !== 'granted') {
@@ -23,6 +19,7 @@ class Main extends React.Component {
   }
 
   async notify(title) {
+    this.enableNotifications()
     const reg = await navigator.serviceWorker.getRegistration();
     reg.showNotification(title);
   }
