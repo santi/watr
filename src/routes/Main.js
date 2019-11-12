@@ -1,5 +1,4 @@
 import React from "react";
-//import logo from "../logo.svg";
 import "./Main.css";
 
 class Main extends React.Component {
@@ -21,7 +20,14 @@ class Main extends React.Component {
   async notify(title) {
     this.enableNotifications()
     const reg = await navigator.serviceWorker.getRegistration();
-    reg.showNotification(title);
+    const options = {
+      body: "It is very important to drink enough water.",
+      icon: "/logo192.png",
+      badge: "/logo192.png",
+      tag: "watr-drink",
+      renotify: true,
+  };
+    reg.showNotification(title, options);
   }
 
   render() {
