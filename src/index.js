@@ -5,7 +5,7 @@ import "./index.css";
 import Main from "./routes/Main";
 import Settings from "./routes/Settings";
 import NotFound from "./routes/notfound";
-import { install } from './serviceWorker'
+import { install } from './installSW'
 
 install()
 

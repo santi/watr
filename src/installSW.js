@@ -1,6 +1,11 @@
 export const install = () => {
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
+    window.addEventListener('load', async function() {
+      const registrations = await navigator.serviceWorker.getRegistrations()
+      for(let registration of registrations) {
+        registration.unregister();
+        console.log("uninstalled old service worker")
+      }
       navigator.serviceWorker.register('/sw.js').then(function(registration) {
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -8,7 +13,7 @@ export const install = () => {
         // registration failed :(
         console.log('ServiceWorker registration failed: ', err);
       });
-    });
+    })
   }
 }
 
