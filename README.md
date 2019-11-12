@@ -23,6 +23,7 @@ The app should now be available at `http://localhost:3000`
 - [ ] Ask for notification permission on mobile
 - [ ] Add icon
 - [ ] Make settings view
+  - [ ] Sane defaults
   - [ ] Notification intervals
   - [ ] Silent hours
   - [ ] How much water to drink
