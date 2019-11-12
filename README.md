@@ -32,6 +32,10 @@ The app should now be available at `http://localhost:3000`
   - [ ] Theme
 - [ ] Water fun facts
 - [ ] Achievements
+- [ ] Check in when drinking water
+  - [ ] Friends list
+  - [ ] Friends get notifications
+  - [ ] Reply actions on check ins
 
 ## Credits
 
