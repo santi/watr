@@ -26,6 +26,13 @@ class Main extends React.Component {
       badge: "/logo192.png",
       tag: "watr-drink",
       renotify: true,
+      noscreen: true,
+      actions: [
+        {
+          action: 'dismiss',
+          title: 'Yes, master'
+        }
+      ]
   };
     reg.showNotification(title, options);
   }

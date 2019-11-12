@@ -14,3 +14,7 @@ addEventListener('onmessage', function(messageevent) {
     console.log(`received data: ${messageevent.data}`);
     //var notification = new Notification("Hi there!");
 })
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+}, false);
