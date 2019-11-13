@@ -7,7 +7,7 @@
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
+  display: flex;
 
   /* Our sidebar item styling */
   text-decoration: none;
@@ -63,9 +63,21 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+#githubLogo {
+  display: flex;
+  height: 100%;
+}
+
+#ghImg {
+  position: absolute;
+  bottom: 0;
 }
